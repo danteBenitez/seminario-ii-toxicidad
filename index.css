@@ -1,0 +1,21 @@
+.prediction {
+    margin-block: 1.2rem;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.prediction h3 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.prediction p {
+    font-size: 1.2em;
+}
+
+.prediction .progress {
+    height: 20px;
+}
