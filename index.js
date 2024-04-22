@@ -31,7 +31,6 @@ trainButton.addEventListener("click", async () => {
 predictButton.addEventListener("click", async () => {
   if (!model) return;
   const input = predictionInput.value;
-  console.log(predictionInput);
   const loader = predictButton.querySelector("i");
   loader.classList.remove("visually-hidden");
   predictButton.setAttribute("disabled", "");
@@ -42,18 +41,6 @@ predictButton.addEventListener("click", async () => {
     predictButton.removeAttribute("disabled");
   }, 100);
 });
-
-renderOutput([
-  {
-    label: "Toxicity",
-    results: [
-      {
-        match: true,
-        probabilities: [0.9, 0.1],
-      },
-    ],
-  },
-]);
 
 function renderOutput(predictionData) {
   output.innerHTML = "";
